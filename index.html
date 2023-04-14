@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>Nikkis Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
 <!-- navbar -->
@@ -19,17 +19,21 @@
     </ul>
 </nav>
 
+<main class="main-container">
+
 <!-- home section -->
-<section class="home-section">
-    <h1 class="hero-heading">hello, i am <br> Nikki </h1>
-    <p class="Professional-Profile">
-        Technical Artist & <br>All around game programmer
-    </p>
-    <img src="img/PlaceHolder.jpg" class="home-img" alt="">
+<section class="page-section home-section active">
+    <div class="inner-home">
+        <h1 class="hero-heading">hello, i am <br> Nikki </h1>
+        <p class="Professional-Profile">
+            Technical Artist & <br>All around game programmer
+        </p>
+        <img src="img\20230413_130252.jpg" class="home-img" alt="">
+    </div>
 </section>
 
 <!-- project section -->
-<section class="project-section">
+<section class="page-section project-section">
     <h1 class="project-heading">some of my projects</h1>
     <div class="project-container">
         <div class="project-card">
@@ -40,8 +44,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
-                    <button class="project-btn live">see live</button>
+                    <a href="https://github.com/Nikkivw/TowerDefenceGame/tree/cc4c4353760ab83f270006c7ae5ddd55ebccb61a" class="project-btn github" target="_blank">github repo</a>
+                    <a href="PMG_project.html" class="project-btn Project">see Project</a>
                 </div>
             </div>
         </div>
@@ -53,8 +57,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
-                    <button class="project-btn live">see live</button>
+                    <a href="#" class="project-btn github" target="_blank">github repo</a>
+                    <a href="#" class="project-btn Project">see Project</a>
                 </div>
             </div>
         </div>
@@ -66,8 +70,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
-                    <button class="project-btn live">see live</button>
+                    <a href="#" class="project-btn github" target="_blank" >github repo</a>
+                    <a href="#" class="project-btn Project">see Project</a>
                 </div>
             </div>
         </div>
@@ -79,8 +83,8 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
-                    <button class="project-btn live">see live</button>
+                    <a href="#" class="project-btn github" target="_blank">github repo</a>
+                    <a href="#" class="project-btn Project">see Project</a>
                 </div>
             </div>
         </div>
@@ -88,12 +92,13 @@
 </section>
 
 <!-- about section -->
-<section class="about-section">
+<section class="page-section about-section">
     <div class="about">
         <div class="about-img-container">
             <img src="img\Snapchat-1846233768.jpg" class="about-img" alt="">
+            <a href="img\NikkiCV.pdf" class="download-cv-btn" download>Download CV</a>
         </div>
-        <p class="about-info">Hi, my name is Nikki van Wijngaarden. I was born in Heiloo, but have lived in Alkmaar all my life. I'm a Gameplay Developer. I myself am the best at developing and programming gameplay, but I also really enjoy world building and 3D modelling. I myself am currently specializing in C# and would also like to learn C++ later.<br><br>
+        <p class="about-info">Hi, my name is Nikki van Wijngaarden. I was born in Heiloo, but have lived in Alkmaar all my life. I'm a All around Game Developer and a Technical Artist. I myself am the best at developing and programming gameplay, but I also really enjoy world building and 3D modelling. I myself am currently specializing in C# and would also like to learn C++ later.<br><br>
             As a child, I grew up with World of Warcraft and the Zelda games. When I was a little older I heard from my father that he had a World of Warcraft server and maintained it with good friends of his back in the day. That gave me the interest and inspiration to study game development. Later, together with my father, I made and programmed several 3D printers. Which gave me a little more insight into the robotics side of programming, which made me more aware that I actually enjoy developing games a lot more.<br><br>
             I was 15 when I started experimenting in Unreal 4 which was also the very first engine I started with, my idea was simple spell casting (healing) together with a health system and animations together with a small and simple inventory system. Unfortunately, I don't have that project anymore because I had never knew of github back then.<br><br>
             Furthermore, I am a fairly quiet person who can sometimes be a really hot head with a great passion for game development. Which I also sometimes express a little too much. I would also like to travel the world with friends and family.<br><br>
@@ -135,53 +140,59 @@
     <div class="skills-container">
         <div class="skill-card">
             <img src="img\icons8-c-sharp-logo-240.png" class="skill-img" alt="">
-            <div class="skill-level">C#</div>
+            <div class="skill-level">Great</div>
             <h1 class="skill-name">C#</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
         <div class="skill-card">
             <img src="img\icons8-unity-240.png" class="skill-img" alt="">
-            <div class="skill-level">Unity</div>
+            <div class="skill-level">Great</div>
             <h1 class="skill-name">Unity</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
         <div class="skill-card">
             <img src="img\icons8-unreal-engine-240.png" class="skill-img" alt="">
-            <div class="skill-level">Unreal</div>
+            <div class="skill-level">Good</div>
             <h1 class="skill-name">Unreal</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
         <div class="skill-card">
             <img src="img\icons8-blender-3d-240.png" class="skill-img" alt="">
-            <div class="skill-level">Blender</div>
+            <div class="skill-level">Fair</div>
             <h1 class="skill-name">Blender</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
         <div class="skill-card">
             <img src="img\icons8-html-5-240 (2).png" class="skill-img" alt="">
-            <div class="skill-level">Html</div>
+            <div class="skill-level">Basic</div>
             <h1 class="skill-name">Html</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
         <div class="skill-card">
             <img src="img\icons8-css3-240 (1).png" class="skill-img" alt="">
-            <div class="skill-level">Css</div>
+            <div class="skill-level">Basic</div>
             <h1 class="skill-name">Css</h1>
             <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
         </div>
     </div>
 </div>
 </section>
-
 <!-- contact section -->
-<section class="contact-section">
+<section class="page-section contact-section">
     <form class="contact-form">
         <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
         <button type="submit" class="form-submit-btn">contact</button>
     </form>
+    <!-- map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5626.277931016439!2d4.855045164788486!3d52.390823383914345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e28849730d2f%3A0x5dffd675d740eddb!2smbo%20%7C%20Mediacollege%20Amsterdam!5e0!3m2!1snl!2snl!4v1681373699527!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 </section>
+</main>
+
     <script src="app.js"></script>
+    <script src="./queryies.js"></script>
 </body>
 </html>

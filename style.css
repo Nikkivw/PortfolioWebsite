@@ -1,7 +1,18 @@
+:root {
+    --nav-height: 80px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 body{
@@ -16,9 +27,8 @@ body{
 
 .navbar{
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +48,7 @@ body{
     text-transform: capitalize;
     padding: 10px 30px;
     margin: 0 20px;
-    line-height: 80px;
+    line-height: var(--nav-height);
     transition: .5s;
     font-size: 20px;
 }
@@ -47,7 +57,7 @@ body{
     opacity: 1;
 }
 
-.home-section{
+/* .home-section{
     width: 100%;
     height: 100vh;
     padding: 0 150px;
@@ -57,7 +67,8 @@ body{
     top: 0;
     opacity: 0;
     transition: 1s;
-}
+    overflow: hidden;
+} */
 
 .hero-heading{
     color: #fff;
@@ -83,34 +94,10 @@ body{
     opacity: 0.2;
 }
 
-.home-section{
-    position: fixed;
-}
-
-.home-section.active,
-.project-section.active,
-.about-section.active,
-.contact-section.active
-{
-    position: relative;
-    opacity: 1;
-    z-index: 8;
-}
-
 /* project-section */
-.project-section{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 100px;
-    position: fixed;
-    top: 0;
-    transition: 1s;
-    opacity: 0;
-}
-
 .project-heading{
     font-size: 100px;
-    background: #262626;
+    background: #484848;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
@@ -129,6 +116,8 @@ body{
 .project-card{
     height: 400px;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .project-img{
@@ -144,13 +133,13 @@ body{
 .project-content{
     position: relative;
     padding: 40px;
-    color: #fff;
+    color: #000000;
     transition: .5s;
     opacity: 0;
 }
 
 .project-title{
-    font-size: 50px;
+    font-size: 30px;
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
@@ -170,18 +159,25 @@ body{
 }
 
 .project-btn{
-    height: 40px;
+    --height: 40px;
+
+    height: var(--height);
     text-transform: capitalize;
     font-size: 18px;
     border: none;
+    border-radius: 15px;
     background: #000;
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    line-height: var(--height);
+    text-decoration: none;
 }
 
-.project-btn.live{
+.project-btn.Project{
     background: none;
     border: 2px solid #fff;
+    border-radius: 15px;
 }
 
 .project-card:hover .project-img{
@@ -193,16 +189,6 @@ body{
 }
 
 /* about-section */
-.about-section{
-    width: 100%;
-    min-height: 100vh;
-    padding: 150px 100px 0;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
-}
-
 .about{
     width: 100%;
     display: grid;
@@ -236,15 +222,17 @@ body{
     padding: 10px 20px;
     color: #fff;
     border: none;
+    border-radius: 15px;
     font-size: 16px;
     text-transform: capitalize;
     cursor: pointer;
     transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(150, 150, 150, 0.197);
+    text-decoration: none;
 }
 
 .download-cv-btn:hover{
-    background: #000;
+    background: #474646;
 }
 
 /* timeline */
@@ -455,12 +443,6 @@ body{
 
 /* Contact */
 .contact-section{
-    position: Left;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
-    padding: 100px 150px;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -498,4 +480,18 @@ body{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
