@@ -310,10 +310,10 @@ body{
 }
 
 .card:nth-child(2), .card:nth-child(2):before{
-    background: #ff4f4f;
+    background: #A8092B;
 }
 .card:nth-child(3), .card:nth-child(3):before{
-    background: #ffb84f;
+    background: #7A0143;
 }
 .card:nth-child(4), .card:nth-child(4):before{
     background: #3dca5c;

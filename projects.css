@@ -1,46 +1,212 @@
-.banner {
-    width: 100%;
-    height: 420px;
-    position: fixed;
-    top: 100px;
-    background-image: url("img/Ongetiteld.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
+:root {
+    --nav-height: 80px;
 }
-.banner h2 {
-    text-align: center;
-    padding-top: 8%;
-    font-size: 70px;
-    font-family:sans-serif;
-    text-transform: uppercase;
-    color: #000000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.content {
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
     width: 100%;
     max-width: 1400px;
     display: block;
     margin: auto;
-    position: relative;
-    top: 340px;
-    background: #191919;
-    height: 1500px;
     min-height: 100vh;
-    padding: 0 150px; 
-}
-.content h2 {
+    background: #191919;
     font-family: sans-serif;
-    letter-spacing: 4px;
-    padding-top: 30px;
-    font-size: 40px;
-    margin: auto;
+}
+
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+.link a{
     color: #fff;
-}
-.content p {
-    margin: auto;
-    padding: 2% 0;
-    font-family: sans-serif;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: var(--nav-height);
+    transition: .5s;
     font-size: 20px;
-    line-height: 30px;
-    color: #a9a9a9;
+}
+
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+.banner { 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/Ongetiteld.jpg); 
+    background-size: cover; 
+    background-position: center center;
+} 
+  
+#bannerText { 
+    padding: 300px 0px 250px 10%; 
+    color: #ffffff; 
+    background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 60%); 
+    max-width: 600px;
+} 
+h1 { 
+    margin:  0; 
+    padding:  0; 
+    border:  0; 
+    outline:  0; 
+    font-weight:  inherit; 
+    font-style:  inherit; 
+    font-size:  52px; 
+    font-family:  inherit; 
+    vertical-align:  baseline;
+    line-height: 60px; 
+    margin-bottom: 10px;
+} 
+  
+#bannerText h1  { 
+    margin-bottom: 0px; 
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.45);
+} 
+  
+strong { 
+    margin:  0; 
+    padding:  0; 
+    border:  0; 
+    outline:  0; 
+    font-weight:  700;
+    font-style:  inherit; 
+    font-size:  100%; 
+    font-family:  inherit; 
+    vertical-align:  baseline;
+}  
+  
+.div { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    font-size: 100%; 
+    font-family: inherit; 
+    vertical-align: baseline;
+} 
+
+.introWrapper { 
+    width: 100%; 
+    max-width: 700px; 
+    margin: 0px auto; 
+    padding: 10px 0px 0px 55px; 
+    font-size: 18px; 
+    line-height: 26px; 
+} 
+  
+.intro { 
+    width: 100%; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 70px 0px 70px 0px;
+}  
+
+/* project info group size and shit */
+.project-info{
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-gap: 40px;
+}
+
+.project-info{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project-info-container{
+    position: relative;
+}
+
+/* Gif/video of the game with what it does */
+.whatIsDoes {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .whatIsDoes-info {
+    width: 60%;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+}
+ 
+  .whatIsDoes-img-container {
+    width: 30%;
+  }
+  
+  .whatIsDoes-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+/* project info group size and shit */
+.code{
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:  65% 30%;
+    grid-gap: 40px;
+}
+
+.code-info{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.code-img-container{
+    position: relative;
+}
+
+.code-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
