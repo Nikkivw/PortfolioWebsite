@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="projects.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+      <ul class="link-group">
+          <li class="link active"><a href="./index.html?p=1">Projects</a></li>
+      </ul>
+  </nav>
+  
+  <!-- banner -->  
+  <div class="banner-site4">
+    <div id="bannerText">
+      <h1><strong>Game<br>mechanics<br></strong></h1>
+    </div>
+  </div>
+      
+  <div class="intro">
+    <div class="introWrapper">
+      <p>
+        An game project made to learn about the Simple GameMechanics where almost all games make use of.
+      </p>
+    </div>
+  </div>
+
+  <!--project info group size and shit -->
+  <div class="page-section project-info-section">
+    <div class="project-info">
+        <div class="project-info-container">
+            <img src="img\ezgif.com-video-to-gif.gif" class="project-img" alt="">
+        </div>
+        <p class="project-text-info">
+            The Engine used for this assignment is the Unity game engine. The game is written entirely in C#. All the models, animations and textures were created by hand in blender. The teamsize was originally two but my teammate abandoned the the project in the Beginning.
+        </p>
+    </div>
+  </div>
+  <!-- Gif/video of the game with what it does-->
+  <section class="page-section whatdoesitdo-section">
+    <div class="whatIsDoes">
+      <div class="whatIsDoes-info">
+        <p>
+          You have to see the game like a basic edition of the game "Call of Duty Zombies," minus the zombie. You can pick up items, change weapons, die, and heal. You can also sprint and jump.
+        </p>
+      </div>
+      <div class="whatIsDoes-img-container">
+        <img src="img\GameMechanics.png" class="whatIsDoes-img" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Code snippet  -->
+  <section class="page-section code-section">
+    <div class="code">
+      <div class="code-img-container">
+            <img src="img\code GM.png" class="code-img" alt="">
+      </div>
+        <p class="code-info">
+          The Update() method is called each frame and listens for the player to press a number key (1, 2, or 3) corresponding to a particular weapon in the player's inventory. When the player presses a number key that corresponds to a weapon other than the one they currently have, the UnequipWeapon() method is called to remove the current weapon and the EquipWeapon(Weapon) method is called to equip the new weapon.<br><br>
+          The EquipWeapon(Weapon weapon) method takes a Weapon property as an argument and sets the currentlyEquippedWeapon variable to the new weapon's index. It then sets an integer parameter of an Animator component to the weaponType attribute of the Weapon object, creates a new game object using the prefab property of the Weapon object, and sets the new object's parent to WeaponHolderR. Lastly, it calls the UpdateWeaponUI(weapon) method of the PlayerHUD component with the new Weapon object.<br><br>
+          The UnequipWeapon() method plays an animation on the Animator component and destroys the game object of the current weapon.<br><br>
+          The GetReferences() method retrieves references to the Animator, Inventory, and PlayerHUD components and sets them to the respective variables anim, inventory, and hud.
+        </p>
+    </div>
+  </section>
+  <section class="page-section code-section">
+    <div class="code">
+      <div class="code-img-container">
+            <img src="img\GM Art.png" class="code-img" alt="">
+      </div>
+        <p class="code-info">
+          This are the Models i made for te game 
+        </p>
+    </div>
+  </section>
+  <br><br>
+  <div class="project-btn-grp">
+    <a href="https://github.com/Nikkivw/TowerDefenceGame/tree/cc4c4353760ab83f270006c7ae5ddd55ebccb61a" class="project-btn github" target="_blank"><img src="img\icons8-github-52.png" alt=""></a>
+  </div>
+</body>
+</html>

@@ -57,7 +57,7 @@ body{
     opacity: 1;
 }
 
-.banner { 
+.banner-site1{ 
     width: 100%; 
     margin-top: 0px; 
     position: relative; 
@@ -65,6 +65,34 @@ body{
     background-size: cover; 
     background-position: center center;
 } 
+
+.banner-site2{ 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/Starfall.jpg); 
+    background-size: cover; 
+    background-position: center center;
+} 
+
+.banner-site3{ 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/Game\ Jam\ Gif.png); 
+    background-size: cover; 
+    background-position: center center;
+} 
+
+.banner-site4{ 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/GameMechanics.png); 
+    background-size: cover; 
+    background-position: center center;
+} 
+
   
 #bannerText { 
     padding: 300px 0px 250px 10%; 
@@ -152,6 +180,7 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    filter: brightness(110%);
 }
 
 .project-info-container{
@@ -189,7 +218,7 @@ strong {
     margin-top: 80px;
     width: 100%;
     display: grid;
-    grid-template-columns:  65% 30%;
+    grid-template-columns:  60% 40%;
     grid-gap: 40px;
 }
 
@@ -209,4 +238,24 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.project-btn-grp{
+    display: grid;
+    -ms-grid-row-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+.project-btn{
+    height: 30%;
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    line-height: var(--height);
+    text-decoration: none;
 }

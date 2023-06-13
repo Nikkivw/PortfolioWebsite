@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="projects.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+      <ul class="link-group">
+          <li class="link active"><a href="./index.html?p=1">Projects</a></li>
+      </ul>
+  </nav>
+  
+  <!-- banner -->  
+  <div class="banner-site2">
+    <div id="bannerText">
+      <h1><strong>Oparation<br>Starfall<br>Magneic platform</strong></h1>
+    </div>
+  </div>
+      
+  <div class="intro">
+    <div class="introWrapper">
+      <p>
+        An couch co-op Game made by NeoN Games Studio With students
+      </p>
+    </div>
+  </div>
+
+  <!--project info group size and shit -->
+  <div class="page-section project-info-section">
+    <div class="project-info">
+        <div class="project-info-container">
+            <img src="img\ezgif.com-video-to-gif (1).gif" class="project-img" alt="">
+        </div>
+        <p class="project-text-info">
+          the team for this project consisted of 20+ members. My part in the project, along with a classmate, was to make new game mechanism. finally, we made a magnetic platform that pulls the drones toward itself whenever the drone is close by.
+        </p>
+    </div>
+  </div>
+  <!-- Gif/video of the game with what it does-->
+  <section class="page-section whatdoesitdo-section">
+    <div class="whatIsDoes">
+      <div class="whatIsDoes-info">
+        <p>
+          In this Project, I was very able to improve my understanding of C# and I learned a lot about Version Control and Code Convension, which makes the code cleaner and easier to read. I myself was struggling a lot in this project with the Code for the force System and the pace at which the Drone is being pulled onto the Platform. 
+        </p>
+      </div>
+      <div class="whatIsDoes-img-container">
+        <img src="img\drone in platform.png" class="whatIsDoes-img" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Code snippet  -->
+  <section class="page-section code-section">
+    <div class="code">
+      <div class="code-img-container">
+            <img src="img\Code PRJ.png" class="code-img" alt="">
+      </div>
+        <p class="code-info">
+          The method OnEnter() is invoked when the script is first enabled. It verifies whether the target Magnetic Platform Object is a viable object, and if so, it triggers a state change in the Target Object to a "MagneticHoldState". It also establishes the magnetic platform object as the MagneticPlatform property of the MagneticHoldState of the target object.<br><br>
+          The WaitForTransition() Coroutine waits a specified time then sets a Trigger in the state machine of the object to signal that the target object has been pulled successfully to the Magnetic Platform. <br><br>
+          The method PullTarget() then calculates the Direction and magnitude of the force to be applied to the targeted object according to its position relative to the magnetic platform. It then adds this force to the ForceBody component of the targeted object, simulating physics and motion for the object. <br><br>
+          The method IsCorrectPosition() verifies whether the target object is located within a certain distance range from the magnetic platform. If so, "true" is returned, which indicates that the target object is in the correct position.
+        </p>
+    </div>
+  </section>
+  <div class="project-btn-grp">
+    <a href="https://github.com/BAStudio" class="project-btn github" target="_blank"><img src="img\icons8-github-52.png" alt=""></a>
+  </div>
+</body>
+</html>
