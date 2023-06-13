@@ -155,7 +155,7 @@ strong {
 .intro { 
     width: 100%; 
     background-color: #000000; 
-    color: #ffffff; 
+    color: whitesmoke; 
     padding: 70px 0px 70px 0px;
 }  
 
@@ -169,8 +169,7 @@ strong {
 }
 
 .project-info{
-    color: #fff;
-    opacity: 0.6;
+    color: whitesmoke;
     font-size: 20px;
     line-height: 40px;
 }
@@ -197,8 +196,7 @@ strong {
   
   .whatIsDoes-info {
     width: 60%;
-    color: #fff;
-    opacity: 0.6;
+    color: whitesmoke;
     font-size: 20px;
     line-height: 40px;
 }
@@ -223,8 +221,7 @@ strong {
 }
 
 .code-info{
-    color: #fff;
-    opacity: 0.6;
+    color: whitesmoke;
     font-size: 20px;
     line-height: 40px;
 }

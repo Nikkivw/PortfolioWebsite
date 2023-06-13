@@ -201,8 +201,7 @@ body{
 }
 
 .about-info{
-    color: #fff;
-    opacity: 0.6;
+    color: whitesmoke;
     font-size: 20px;
     line-height: 40px;
 }
@@ -386,7 +385,6 @@ body{
 
 .skill-info{
     text-align: center;
-    opacity: 0.5;
     font-size: 18px;
     line-height: 30px;
 }
