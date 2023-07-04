@@ -1,3 +1,7 @@
+@media screen and (max-width: 600px) {
+    .home-section{padding: 0 30px;}
+}
+
 .main-container {
     position: relative;
 }
@@ -29,11 +33,4 @@
     height 0s ease 0s,
     min-height 0s ease 0s,
     overflow 0s ease 0s;
-}
-
-/* Home section */
-.home-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
