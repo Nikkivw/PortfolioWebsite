@@ -93,6 +93,24 @@ body{
     background-position: center center;
 } 
 
+.banner-site5{ 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/worlddiagramportfolio.png); 
+    background-size: cover; 
+    background-position: center center;
+} 
+
+.banner-site6{ 
+    width: 100%; 
+    margin-top: 0px; 
+    position: relative; 
+    background-image: url(img/droneinplatform.png); 
+    background-size: cover; 
+    background-position: center center;
+} 
+
   
 #bannerText { 
     padding: 300px 0px 250px 10%; 
@@ -159,6 +177,22 @@ strong {
     padding: 70px 0px 70px 0px;
 }  
 
+.custom-button {
+    display: block; /* Ensures the button is on a new line below the paragraph */
+    margin: 20px; /* Adjust this value to control the space between the text and the button */
+    background-color: #0074cc; /* Customize the button's background color */
+    color: white; /* Customize the button's text color */
+    padding: 10px 10px; /* Adjust the padding to change the button's size */
+    border: none; /* Remove the button border */
+    cursor: pointer; /* Show a pointer cursor when hovering over the button */
+    border-radius: 5px; /* Add rounded corners to the button */
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .custom-button:hover {
+    background-color: #00569c; /* Customize the button's background color on hover */
+  }
 /* project info group size and shit */
 .project-info{
     margin-top: 80px;
@@ -210,6 +244,18 @@ strong {
     height: auto;
     border-radius: 20px;
   }
+
+  .whatIsDoes-img2 {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+  .whatIsDoes-img1 {
+    width: 130%;
+    height: 120%;
+    border-radius: 20px;
+}
+
 
 /* project info group size and shit */
 .code{
