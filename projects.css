@@ -293,4 +293,5 @@ strong {
     text-align: center;
     line-height: var(--height);
     text-decoration: none;
+    position: relative;
 }
