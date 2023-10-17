@@ -63,7 +63,7 @@
       </div>
         <p class="code-info">
           The method OnEnter() is invoked when the script is first enabled. It verifies whether the target Magnetic Platform Object is a viable object, and if so, it triggers a state change in the Target Object to a "MagneticHoldState". It also establishes the magnetic platform object as the MagneticPlatform property of the MagneticHoldState of the target object.<br><br>
-          The WaitForTransition() Coroutine waits a specified time then sets a Trigger in the state machine of the object to signal that the target object has been pulled successfully to the Magnetic Platform. <br><br>
+          The WaitForTransition() Coroutine waits a specified time, then sets a Trigger in the state machine of the object to signal that the target object has been pulled successfully to the Magnetic Platform. <br><br>
           The method PullTarget() then calculates the Direction and magnitude of the force to be applied to the targeted object according to its position relative to the magnetic platform. It then adds this force to the ForceBody component of the targeted object, simulating physics and motion for the object. <br><br>
           The method IsCorrectPosition() verifies whether the target object is located within a certain distance range from the magnetic platform. If so, "true" is returned, which indicates that the target object is in the correct position.
         </p>
