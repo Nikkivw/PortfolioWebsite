@@ -26,7 +26,7 @@
   <div class="intro">
     <div class="introWrapper">
       <p>
-        This project was originally intended as a full tower defense game, which we had to make as part of a school project. This was my first attempt at a tower defense game until my laptop failed, so eventually this project became a personal project. I was not able to make it a full tower defence game, so it became just the procedural map generator. I'm still very proud of what I accomplished.<br><br>
+        This project was originally intended as a full tower defence game, which we had to make as part of a school project. This was my first attempt at a tower defence game until my laptop failed, so eventually this project became a personal project. Since I was not able to make it a full tower defence game, it became just the procedural map generator. I'm still very proud of what I accomplished<br><br>
         This Project is made in Unity Game Engine. the group size is 1 person. the project was made in 2 weeks. And the art is from the free assets store.
       </p>
     </div>
@@ -40,8 +40,8 @@
             <iframe frameborder="" src="https://itch.io/embed-upload/8878601?color=333333" allowfullscreen="" width="550" height="370"><a href="https://snikkerx.itch.io/procidualmapgen">Play ProcidualMapGen on itch.io</a></iframe>
         </div>
         <p class="project-text-info"> 
-          What I learnt from this project is that it's not bad to look things up if you don't know them sometimes and That you don't have to prove yourself extra to the people who think you can't do something. Furthermore, with this project I greatly improved my C# and Unity skills and learned new things that I wouldn't have learned in school otherwise. <br><br>
-          <strong>if you want to try my demo please open it fullscreen so you can see it full screen and use the restart button</strong>
+          What I learned from this project is that it's not bad to look things up if you don't know them sometimes and that you don't have to prove yourself extra to the people who think you can't do something. Furthermore, with this project I greatly improved my C# and Unity skills and learned new things that I wouldn't have learned in school otherwise. Such as how to use Coroutines and the IEnumerators.<br><br>
+          <strong>if you want to try my demo please open it fullscreen so you can use the restart button</strong>
         </p>
     </div>
   </div>
@@ -50,7 +50,7 @@
     <div class="whatIsDoes">
       <div class="whatIsDoes-info">
         <p>
-          What this project basically does is it checks every time it places a path block beside the one lying next to it, and when it has sufficient room, it creates a loop. It verifies this through the x and Y coordinates that are attached to the path blocks. If it cannot place a loop, it puts down a regular path block. Once the path is laid, it finishes the map by itself with random scenery blocks that it takes out from a random list.
+          What this project basically does, is it checks every time it places a path block when there is a path block next to it, and when it has sufficient room, it creates a loop. It verifies this through the x and Y coordinates that are attached to the path blocks. If it cannot place a loop, it puts down a regular path block. Once the path is laid, it finishes the map by itself with random scenery blocks that it takes out from a random list.
         </p>
       </div>
       <div class="whatIsDoes-img-container">
@@ -65,8 +65,9 @@
             <img src="img\CodeSnippedPMG.png" class="code-img" alt="">
       </div>
         <p class="code-info">
-          The function CreateGrid is a enumerator that invokes two other functions, layPathBlocks and laySceneryBlocks, by using yield return. The function LayPathBlocks creates the path blocks for the Grid by Iterating the list pathBlocks, fetching the rotation value of a block and instantiating a block game object with the appropriate rotation. The feature then waits 0.1 seconds before moving to the following pad block.<br><br>
-          The laySceneryBlocks feature will create the scenery blocks for the Grid by iterating over the x and y coordinates of the Grid and verifying that the correspondent block is empty. When it is empty, the feature selects a scenery block prefab at random, instantiates it at that location, then waits 0.025 sec before it moves to the next block.
+          The CreateGrid() function is like a supervisor. It calls two other functions, layPathBlocks() and laySceneryBlocks(), and waits for them to finish before proceeding.<br><br>
+          In layPathBlocks(), we make the path blocks for the grid. We go through a list of path blocks, find out their orientation, and put them in the grid with the right rotation. Then, we pause for 0.1 seconds before working on the next block.<br><br>
+          As for the laySceneryBlocks function, it's all about creating scenery blocks for the grid. We go through the grid's rows and columns, checking if a spot is empty. If it is, we randomly choose a scenery block, place it there, and wait for 0.025 seconds before moving to the next spot.
         </p>
     </div>
   </section>
